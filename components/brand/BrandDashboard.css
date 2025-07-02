@@ -1,0 +1,253 @@
+/* Modern Brand Dashboard Enhancements */
+.brand-dashboard-container {
+    padding: 1.5rem;
+    background: linear-gradient(120deg, #f8fafc 0%, #e3eefe 100%);
+    min-height: 100vh;
+}
+
+.brand-dashboard-container h1 {
+    font-size: 2.2rem;
+    color: #2563eb;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    letter-spacing: 0.5px;
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+.stat-card-brand {
+    background: white;
+    border-radius: 1.2rem;
+    box-shadow: 0 6px 32px rgba(44, 62, 80, 0.10);
+    padding: 2rem 1.5rem;
+    position: relative;
+    border: 1.5px solid #e3eefe;
+    transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
+}
+
+.stat-card-brand:hover {
+    transform: scale(1.03) translateY(-2px);
+    box-shadow: 0 12px 32px rgba(44, 62, 80, 0.16);
+    border-color: #b6d0fa;
+    z-index: 2;
+}
+
+.stat-content {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.stat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 1rem;
+    font-size: 2.1rem;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+}
+
+.stat-icon.new-complaints {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+}
+
+.stat-icon.in-progress {
+    background: linear-gradient(135deg, #4ecdc4, #44a08d);
+}
+
+.stat-icon.resolved {
+    background: linear-gradient(135deg, #45b7d1, #96c93d);
+}
+
+.stat-icon.credits {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+}
+
+.stat-info h6 {
+    margin: 0 0 0.5rem 0;
+    color: #6c757d;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.stat-info h2 {
+    margin: 0;
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: #22223b;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.main-content {
+    order: 1;
+}
+
+.sidebar {
+    order: 2;
+    background: #f4f8fd;
+    border-radius: 1.2rem;
+    box-shadow: 0 2px 12px rgba(44, 62, 80, 0.07);
+    border: 1.5px solid #e3eefe;
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+}
+
+.sidebar .card {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+.sidebar-link-icon {
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+/* Cards */
+.card {
+    background: white;
+    border-radius: 1.2rem;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.10);
+    overflow: hidden;
+    border: 1.5px solid #e3eefe;
+}
+
+.card-header {
+    background: #f8f9fa;
+    padding: 1.2rem 2rem;
+    border-bottom: 1px solid #e3eefe;
+}
+
+.card-header h4 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #2563eb;
+    font-weight: 700;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+/* Table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.table th,
+.table td {
+    padding: 1rem 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e3eefe;
+}
+
+.table th {
+    font-weight: 700;
+    background: #f4f8fd;
+    color: #2563eb;
+    letter-spacing: 0.1px;
+}
+
+.table tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* Status Badges */
+.badge-status {
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.45em 1em;
+    border-radius: 1.2em;
+    text-transform: capitalize;
+    letter-spacing: 0.03em;
+    background: #e3eefe;
+    color: #111 !important;
+    border: 1px solid #b6d0fa;
+}
+.badge-new {
+    background: #fef6f6;
+    color: #ee5a52;
+    border-color: #ffb3b3;
+}
+.badge-in-progress {
+    background: #e6fcf5;
+    color: #44a08d;
+    border-color: #b2f2e5;
+}
+.badge-resolved {
+    background: #f0fbe6;
+    color: #96c93d;
+    border-color: #d4f5b2;
+}
+
+/* View Button */
+.view-btn {
+    font-weight: 600;
+    border-radius: 2em;
+    padding: 0.4em 1.2em;
+    font-size: 1rem;
+    box-shadow: 0 1px 4px rgba(44, 62, 80, 0.08);
+    transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+}
+.view-btn:hover {
+    background: #2563eb;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.12);
+}
+
+/* Responsive Breakpoints */
+@media (min-width: 576px) {
+    .brand-dashboard-container {
+        padding: 2rem 2.5rem;
+    }
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+@media (min-width: 768px) {
+    .brand-dashboard-container {
+        padding: 2.5rem 4vw;
+    }
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+    .dashboard-content {
+        grid-template-columns: 2.5fr 1fr;
+        gap: 2.5rem;
+    }
+    .sidebar {
+        padding: 2rem 1rem 2rem 1rem;
+    }
+}
+@media (min-width: 1200px) {
+    .brand-dashboard-container {
+        padding: 3rem 10vw;
+    }
+}
+/* Re-use stats-container and other relevant classes from UserDashboard.css if desired */
